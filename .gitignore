@@ -1,0 +1,34 @@
+# Compilación y artefactos de .NET
+**/[Bb]in/
+**/[Oo]bj/
+**/[Aa]rtifacts/
+**/[Tt]est[Rr]esults/
+*.dll
+*.exe
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+*.nupkg
+*.snupkg
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code y otros IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Cobertura y resultados de pruebas
+coverage/
+coverage-report/
+*.coverage
+*.coveragexml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
