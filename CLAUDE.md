@@ -1,6 +1,7 @@
 # CLAUDE.md
 
 Este archivo ofrece guía a Claude Code (claude.ai/code) al trabajar con código en este repositorio.
+Cambio
 
 ## Qué es este repositorio
 
