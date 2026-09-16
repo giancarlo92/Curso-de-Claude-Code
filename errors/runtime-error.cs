@@ -5,4 +5,4 @@
 Console.WriteLine("Este script compila y ahora provocará un error de ejecución.");
 
 var values = new[] { "primer elemento" };
-Console.WriteLine(values[1]);
+Console.WriteLine(values[0]);
