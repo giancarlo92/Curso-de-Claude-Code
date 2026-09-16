@@ -32,3 +32,9 @@ coverage-report/
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Docker SQL Server local lab
+.env
+.env.*
+!.env.example
+docs/

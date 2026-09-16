@@ -1,11 +1,28 @@
 #:sdk Microsoft.NET.Sdk
 #:property TargetFramework=net10.0
 #:property LangVersion=14.0
+#:package Microsoft.Data.SqlClient@7.0.3
+#:include database/SqlServerConnector.cs
 
+using CursoClaudeCode.Database;
 using System.Diagnostics;
 
 var projectRoot = ResolveProjectRoot();
 var errorsDirectory = Path.Combine(projectRoot, "errors");
+
+try
+{
+    var database = SqlServerConnector.FromEnvironment(projectRoot);
+    await database.VerifyConnectionAsync();
+    await database.VerifyFullAccessAsync();
+    Console.WriteLine("Conexión a la base de datos exitosa");
+    Console.WriteLine("Acceso completo de lectura y escritura verificado");
+}
+catch (Exception exception)
+{
+    Console.Error.WriteLine($"No se pudo conectar a la base de datos: {exception.Message}");
+    return 1;
+}
 
 var scenarios = new[]
 {

@@ -12,8 +12,10 @@
 
   <ItemGroup>
     <Compile Include="main.cs" />
+    <Compile Include="database\SqlServerConnector.cs" />
     <None Include="errors\compilation-error.cs" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <None Include="errors\runtime-error.cs" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.3" />
   </ItemGroup>
 
   <Target Name="ValidateCompilationErrorExample" BeforeTargets="Build">
