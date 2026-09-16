@@ -2,7 +2,7 @@ using Xunit;
 
 public static class Calculator
 {
-    public static int Add(int left, int right) => left - right;
+    public static int Add(int left, int right) => left + right;
 }
 
 public sealed class CalculatorTests

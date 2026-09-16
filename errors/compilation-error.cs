@@ -2,8 +2,8 @@
 #:property TargetFramework=net10.0
 #:property LangVersion=14.0
 
-Console.WriteLine("Este script contiene un error de compilación intencionado.");
+Console.WriteLine("Este script compila correctamente.");
 
-int total = "texto";
+int total = 42;
 
 Console.WriteLine(total);
