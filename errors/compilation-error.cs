@@ -4,6 +4,6 @@
 
 Console.WriteLine("Este script contiene un error de compilación intencionado.");
 
-int total = "texto";
+int total = 100;
 
 Console.WriteLine(total);
